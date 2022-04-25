@@ -28,10 +28,10 @@ $scrapTime = Get-Date $scrapTime -Format "h:mm tt";
 
 # Copy to Clipboard
 if ($hours -ge 1) {
-    Set-Clipboard -Value "chat.say `"420 scrap drops in ${hours}h${minutes}m at $scrapTime (Central Time)`"";
+    Set-Clipboard -Value "chat.say `"420 scrap drops in ${hours}h${minutes}m @ $scrapTime (CT)`"";
 }
 else {
-    Set-Clipboard -Value "chat.say `"420 scrap drops in ${minutes}m at $scrapTime (Central Time)`"";
+    Set-Clipboard -Value "chat.say `"420 scrap drops in ${minutes}m @ $scrapTime (CT)`"";
 }
 
 [Microsoft.VisualBasic.Interaction]::AppActivate("Rust")
